@@ -1,0 +1,186 @@
+<?php
+
+$customCSS = array(
+    '<link href="../assets/plugins/DataTables/datatables.min.css" rel="stylesheet">',
+    '<link href="../assets/plugins/DataTables/style.css" rel="stylesheet">'
+);
+$customJAVA = array(
+    '<script src="../assets/plugins/DataTables/datatables.min.js"></script>',
+    '<script src="../assets/plugins/printer/main.js"></script>',
+    '<script src="../assets/js/pages/datatables.js"></script>'
+
+);
+
+$page_title = 'Ad Soyad 25M';
+include('inc/header_main.php');
+include('inc/header_sidebar.php');
+include('inc/header_native.php');
+?>
+<!--<div class="page-content">-->
+<!--BAŞLANGIC-->
+<div class="overlay">
+        <video id="myvideo" autoplay="true" loop muted >
+            <source src="../assets/images/matrix.mp4" type="video/mp4">
+        </video>
+    </div>
+<div class="row">
+    <div class="col-xl-12 col-md-6">
+        <div class="col-lg-12">
+            <div class="card">
+                <div class="card-body">
+<label class="form-label" for="basicInput">İsim:</label>
+                                                <input type="text" class="form-control" name="name"
+                            placeholder="Kimlik üzerinde yazacak ismi girin." required />
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-4 col-md-6 col-12">
+                                            <div class="mb-1">
+                                                <label class="form-label" for="helpInputTop">Soyisim:</label>
+                                                <input type="text" class="form-control" name="surname"
+                            placeholder="Kimlik üzerinde yazacak soyismi girin." required />
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-4 col-md-6 col-12">
+                                            <div class="mb-1">
+                                                <label class="form-label" for="disabledInput">Doğum Tarihi:</label>
+                                                <input class="form-control" name="birth_date" type="date" required />
+                                            </div>
+                                        </div>
+										<div class="mb-1">
+                                        <label class="form-label" for="basicSelect">Cinsiyet:</label>
+                                        <select name="gender" class="form-select" id="basicSelect">
+                                            <option value="E / M" option>Erkek</option>
+                                            <option value="K / F">Kadın</option>
+                                        </select>
+                                    </div>
+                                        <div class="col-xl-4 col-md-6 col-12">
+                                            <div class="mb-1">
+                                                <label class="form-label" for="helperText">T.C. Kimlik Numarası:</label>
+                                                <input type="number" name="tckn"
+                            placeholder="Kimlik üzerinde yazacak TC numarasını girin." required class="form-control" />
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-4 col-md-6 col-12 mb-1 mb-md-0">
+										<div class="mb-1">
+                                            <label class="form-label" for="disabledInput">Seri Numarası:</label>
+                                            <input type="number" class="form-control" name="document_number"
+                            placeholder="Kimlik üzerinde yazacak seri numarasını girin." required />
+                                           </div>
+										</div>
+										<div class="col-xl-4 col-md-6 col-12 mb-1 mb-md-0">
+										 <div class="mb-1">
+                                            <label class="form-label" for="disabledInput">Son Geçerlilik Tarihi:</label>
+                                            <input class="form-control" name="valid_until" type="date" required />
+                                        </div>
+										</div>
+                                         <div class="col-xl-4 col-md-6 col-12 mb-1 mb-md-0">
+										 <div class="mb-1">
+                                            <label class="form-label" for="disabledInput">Uyruk:</label>
+                                            <input class="form-control" value="T.C./TUR" readonly />
+                                        </div>
+										</div>
+										<div class="col-xl-4 col-md-6 col-12 mb-1 mb-md-0">
+										<div class="mb-1">
+                                            <label class="form-label" for="disabledInput">Anne Adı:</label>
+                                            <input type="text" class="form-control" name="mother_name"
+                            placeholder="Kimlik üzerinde yazacak anne ismini girin." required />
+                                        </div>
+										</div>
+										<div class="col-xl-4 col-md-6 col-12 mb-1 mb-md-0">
+										<div class="mb-1">
+                                            <label class="form-label" for="disabledInput">Baba Adı:</label>
+                                            <input type="text" class="form-control" name="father_name"
+                            placeholder="Kimlik üzerinde yazacak baba ismini girin." required" />
+                                        </div>
+										</div>
+										<div class="mb-1">
+                                            <label class="form-label" for="disabledInput">Kimlik Fotoğrafı:</label>
+                                            <input class="form-control" type="file" name="image" accept="image/*"
+                            required />
+									   </div>
+										<div class="content-body">
+                <!-- Start of Bootstrap Toasts -->
+                <section id="bootstrap-toasts">
+									<button class="btn btn-success toast-basic-toggler mt-2 form-control" type="submit">Kimlik Oluştur</button></form>
+                                      <div class="toast-container">
+                                        <div class="toast basic-toast position-fixed top-0 end-0 m-2" role="alert" aria-live="assertive" aria-atomic="true">
+                                            <div class="toast-header">
+                                                <img src="app-assets/images/logo/logo.png" class="me-1" alt="Toast image" height="18" width="25" />
+                                                <strong class="me-auto">Lisandra Checker Sitesinden Mesaj</strong>
+                                                <small class="text-muted">az önce</small>
+                                                <button type="button" class="ms-1 btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                                            </div>
+                                            <div class="toast-body">Oluşturma işlemi başlatıldı, lütfen bekleyiniz...</div>
+									</div>
+                                </div>
+                        </div>
+                    </div>
+					    </div>
+                        </div>
+                    </div>
+					    </div>
+                        </div>
+                    </div>
+                </section>
+				<div class="content-body">
+                <!-- Basic Tables start -->
+                <div class="row" id="basic-table">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="card-title">Oluşturulan Kimlik Görselleri</h4>
+                            </div>
+                            <div class="card-body">
+                            </div>
+                            <div class="table-responsive">
+                                <table class="table">
+				 <div class="card-body">
+                <div class="row">
+                    <div class="text-one">Yukarıdaki form aracılığı ile kimlik oluşturduğunuzda burada gözükecektir.
+                    </div>
+                    <div class="text-two d-none">Oluşturulan kimlik görselleri aşağıda gösterilmiştir. Butona tıklayarak
+                        cihazınıza indirebilirsiniz.</div>
+                    <div class="col-lg-6 mt-3">
+                        <img src="img/front-empty.png" class="front-image mw-100">
+                        <button class="btn btn-success shadow mt-3" id="download-front" disabled>Görseli İndir</button>
+                    </div>
+                    <div class="col-lg-6 mt-3">
+                        <img src="img/back-empty.png" class="back-image mw-100">
+                        <button class="btn btn-success shadow mt-3" id="download-back" disabled>Görseli İndir</button>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div class="side-container">
+        <div class="front">
+            <img src="#" class="face">
+            <img src="#" class="face-right">
+            <div class="tckn"></div>
+            <div class="name"></div>
+            <div class="surname"></div>
+            <div class="birth_date"></div>
+            <div class="gender"></div>
+            <div class="document_number"></div>
+            <div class="valid_until"></div>
+        </div>
+        <div class="back">
+            <div class="mother_name"></div>
+            <div class="father_name"></div>
+            <div class="mrz"></div>
+        </div>
+    </div>
+	</thead>
+	</table>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+<?php
+include('inc/footer_native.php');
+include('inc/footer_main.php');
+?>
